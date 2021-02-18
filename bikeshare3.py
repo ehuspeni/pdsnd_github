@@ -17,7 +17,7 @@ def get_filters():
     else:
         print('Great! Let\'s look at {}'.format(city))
 
-    month = input('What month would you like to look at? (please specify a month or type "all"):').lower()
+    month = input('What month would you like to look at? (please specify a month from January to June or type "all"):').lower()
     while month not in months:
         print("Oops! That isn't a valid month input. Please specify a month between january and june or type 'all'")
         month = input('What month would you like to look at? (please specify a month or type "all"):').lower()
@@ -160,7 +160,12 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
-            break
+            if restart.lower() != 'no':
+                print("Oops, I'm not sure what that input means!")
+                restart = input('\nWould you like to restart? Enter yes or no.\n')
+            else:
+                break
+
 
 
 if __name__ == "__main__":
