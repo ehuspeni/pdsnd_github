@@ -1,8 +1,8 @@
 ### Date created
-Create Github Project Feb 16, 2021.
+Created Github Project Feb 16, 2021.
 
 ### Project Title
-Bikeshare Data.
+Bikeshare Data Python Project
 
 ### Description
 A simple program to calculate statistics on bikeshare data for Washington, New York City, and Chicago.
