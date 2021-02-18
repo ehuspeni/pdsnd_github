@@ -37,7 +37,7 @@ def get_filters():
 
 def load_data(city, month, day):
     #Loads data for the specified city and filters by month and day if applicable.
-    filename = 'C:/Users/Elaine/OneDrive/Documents/Udacity/Python/bikeshare-2/' + str(CITY_DATA[city])
+    filename = 'C:/Users/Elaine/OneDrive/Documents/Udacity/Python/udacity-git-course/pdsnd_github/.ignorefiles/' + str(CITY_DATA[city])
 
     # load data file into a dataframe
     df = pd.read_csv(filename)
