@@ -5,11 +5,11 @@ Create Github Project Feb 16, 2021.
 Bikeshare Data.
 
 ### Description
-A simple program to calcuate statistics on bikeshare data for certain cities.
+A simple program to calculate statistics on bikeshare data for Washington, New York City, and Chicago.
 
 ### Files used
 Program file: bikeshare3.py
-DAta files: washington.csv, newyorkcity.csv, chicago.csv
+Data files: washington.csv, newyorkcity.csv, chicago.csv
 
 ### Credits
-No sources to credit at this time. 
+No sources to credit at this time.
