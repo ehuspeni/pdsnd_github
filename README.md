@@ -9,7 +9,7 @@ A simple program to calculate statistics on bikeshare data for Washington, New Y
 
 ### Files used
 Program file: bikeshare3.py
-Data files: washington.csv, newyorkcity.csv, chicago.csv
+Data files: washington.csv, new_york_city.csv, chicago.csv
 
 ### Credits
 No sources to credit at this time.
