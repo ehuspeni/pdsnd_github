@@ -9,7 +9,7 @@ months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
 days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
 
 def get_filters():
-
+#prompts user to provde filters for data
     city = input('What city would you like to analyze? (chicago, new york city, or washington):').lower()
     while city not in CITY_DATA.keys():
         print("Oops! That isn't a valid city input. Please specify chicago, new york city, or washington")
@@ -148,11 +148,29 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+
+def display_raw_data(df):
+    """ Asks if user would like to see raw data """
+    i = 0
+    raw = input("Would you like to see raw data from your filtered dataset? Specify 'yes' or 'no'.").lower()
+    pd.set_option('display.max_columns',200)
+
+    while True:
+        if raw == 'no':
+            break
+        elif raw == 'yes':
+            print(df.iloc[(i):(i+5),:]) # TO DO: appropriately subset/slice your dataframe to display next five rows
+            raw = input("Would you like to see the next 5 rows? Enter 'yes' or 'no'.") # TO DO: convert the user input to lower case using lower() function
+            i += 5
+        else:
+            raw = input("\nYour input is invalid. Please enter only 'yes' or 'no'\n").lower()
+
 def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
+        display_raw_data(df)
         time_stats(df, month, day)
         station_stats(df)
         trip_duration_stats(df)
