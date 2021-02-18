@@ -2,13 +2,14 @@
 Create Github Project Feb 16, 2021.
 
 ### Project Title
-Bikeshare Data. 
+Bikeshare Data.
 
 ### Description
-Describe what your project is about and what it does
+A simple program to calcuate statistics on bikeshare data for certain cities.
 
 ### Files used
-Include the files used
+Program file: bikeshare3.py
+DAta files: washington.csv, newyorkcity.csv, chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+No sources to credit at this time. 
